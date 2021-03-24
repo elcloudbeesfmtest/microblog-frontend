@@ -9,7 +9,7 @@ async function initRollout () {
   }
 
   Rox.register('default', Flags)
-  await Rox.setup(process.env.VUE_APP_CLOUDBEES_KEY, options)
+  await Rox.setup(process.env.VUE_APP_ROLLOUT_KEY, options)
 }
 
 initRollout().then(function () {
